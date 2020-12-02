@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ISCHOOL3</string>
+    <string name="Button">Вход</string>
+    <string name="Login">Логин</string>
+    <string name="Pass">Пароль</string>
+    <string name="Correct" >Верно</string>
+    <string name="Incorrect">Вы ошиблись в логине или пароле</string>
+</resources>
