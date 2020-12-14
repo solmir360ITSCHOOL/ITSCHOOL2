@@ -1,6 +1,8 @@
 package net.snode.itschool3;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -34,11 +36,22 @@ public class MainActivity extends AppCompatActivity {
                 else  {
                     enter.setText(getResources().getString(R.string.Incorrect));
                     enter.setTextColor(getResources().getColor(R.color.incorrect));
+                    startActivityForResult(new Intent(MainActivity.this, MainActivity2.class), 1);
                 }
 
                 loginElem.setText("");
                 passElem.setText("");
             }
         });
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (resultCode) {
+            case RESULT_OK:
+                ((EditText) findViewById(R.id.login)).setText(data.getStringExtra("callback"));
+                break;
+        }
     }
 }

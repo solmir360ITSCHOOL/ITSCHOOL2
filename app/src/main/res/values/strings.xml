@@ -3,6 +3,8 @@
     <string name="Button">Вход</string>
     <string name="Login">Логин</string>
     <string name="Pass">Пароль</string>
-    <string name="Correct" >Верно</string>
+    <string name="Correct">Верно</string>
     <string name="Incorrect">Вы ошиблись в логине или пароле</string>
+    <string name="register_str">Регистрация пользователя</string>
+    <string name="reg_str">Зарегестрироваться</string>
 </resources>
