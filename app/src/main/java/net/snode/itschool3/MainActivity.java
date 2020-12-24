@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), R.id.text, Toast.LENGTH_LONG).show();
                 EditText loginElem = findViewById(R.id.login);
                 EditText passElem = findViewById(R.id.pass);
                 TextView enter = findViewById(R.id.enter);
