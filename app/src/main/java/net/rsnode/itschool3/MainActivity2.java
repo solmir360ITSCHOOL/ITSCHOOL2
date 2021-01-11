@@ -1,4 +1,4 @@
-package net.snode.itschool3;
+package net.rsnode.itschool3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
